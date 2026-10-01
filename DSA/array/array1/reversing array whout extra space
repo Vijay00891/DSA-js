@@ -1,0 +1,14 @@
+let arr = [42, 17, 88, 5, 63, 71, 29, 94, 52, 11];
+
+let i = 0;
+let j = arr.length-1;
+
+while(i<j){
+  let temp = arr[i];
+  arr[i]= arr[j];
+  arr[j] = temp;
+  i++;
+  j--;
+}
+
+console.log(arr);
