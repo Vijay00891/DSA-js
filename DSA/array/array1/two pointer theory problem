@@ -1,0 +1,27 @@
+let arr = [0,1,1,0,0,1,1,0] 
+
+let i = 0;
+let j = arr.length - 1;
+
+while (i < j) {
+
+    // i checks from the left
+    if(arr[i] === 0){
+      i++
+    }
+    // j checks from the right
+   if (arr[j] === 1){
+     j--
+   }
+    // if both find elements in the wrong place
+  if(arr[i] === 1 && arr[j] === 0){
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp
+    i++;
+    j--;
+  }
+    // swap them
+}
+
+console.log(arr)
